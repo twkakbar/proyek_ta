@@ -227,7 +227,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   :::
 
 
-  ![Img 1](assets/18.png)
+  ![Img 1](assets/19.png)
  
 
 - Sekarang kita tambahkan user untuk `prometheus` yang telah kita pindahkan sebelumnya.
@@ -237,7 +237,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
 
-  ![Img 1](assets/19.png)
+  ![Img 1](assets/20.png)
  
 
 - Selanjutnya kita akan mengganti ownership untuk prometheus kita.
@@ -247,7 +247,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
  
-  ![Img 1](assets/20.png)
+  ![Img 1](assets/21.png)
   
 
 - Selanjut buat file konfigurasi pada `/etc/systemd/system/` dengan nama `prometheus.service`, setelah itu masukkan konfigurasi berikut ini :
