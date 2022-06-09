@@ -467,13 +467,13 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
 - User dan pasword default dari grafana adalah User : `admin` Password : `admin`
 
   
-  ![Img 1](assets/37.jpg)
-  
-
-- Selanjutnya masukkan password untuk `grafana` kalian, default nya adalah user: admin password: admin
+![Img 1](assets/36.png)
 
 
-  ![Img 1](assets/38.jpg)
+- Selanjutnya masukkan password untuk `grafana` yang kalian inginkan
+
+
+  ![Img 1](assets/41.png)
 
 
 - Berikut adalah tampilan dari `grafana`
