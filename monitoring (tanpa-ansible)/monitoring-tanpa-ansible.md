@@ -59,6 +59,10 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
 
 - Selanjutnya buat file konfigurasi pada `/etc/systemd/system/` dengan nama `node_exporter.service`, setelah itu masukkan konfigurasi berikut ini :
 
+  ![Img 1](assets/5.png)
+
+  ![Img 1](assets/6.png)
+
   ```
   sudo nano /etc/systemd/system/node_exporter.service
   ```
@@ -84,8 +88,6 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
   [Install] adalah informasi untuk `node exporter` bisa di jalankan oleh user lain selain `node exporter`
 
 
-  ![Img 1](assets/5.png)
-
 
 - Karena kita tadi telah menambahkan konfigurasi untuk file service `node exporter`, sekarang kita akan melakukan reload untuk si servicenya. Untuk perintahnya kalian dapat menggunakan perintah dibawah ini :
 
@@ -93,8 +95,8 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
   sudo systemctl daemon-reload
   ```
 
- 
-  ![Img 1](assets/6.png)
+![Img 1](assets/55.png) 
+  
   
 
 - Sekarang kita tinggal menghidupukan `node exporter` kita.
