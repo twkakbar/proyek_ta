@@ -291,7 +291,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
   
-  ![Img 1](assets/23.png)
+
 
 
 - Sekarang kita tinggal menghidupukan `prometheus` kita.
@@ -300,8 +300,6 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   sudo systemctl enable prometheus
   ```
 
-  
-  ![Img 1](assets/24.png)
 
 
 - Karena kita pertama kali membuat `prometheus` ini, sekarang kita akan menjalankan service dari `prometheus`.
@@ -310,8 +308,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   sudo systemctl start prometheus
   ```
 
-
-  ![Img 1](assets/25.png)
+  ![Img 1](assets/23.png)
 
 
 - Jika tahapan diatas telah kalian jalankan sekarang kita coba cek apakah `prometheus` kita telah berjalan atau tidak.
