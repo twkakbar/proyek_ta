@@ -1,4 +1,4 @@
-# Setup Ansible and Monitoring
+# Setup Ansible dan Monitoring
 
 ## Langkah 1 - Ansible Installation (Dilakukan di local)
 
@@ -149,6 +149,12 @@ Untuk ansible playbook yang saya gunakan adalah seperti berikut:
 ```
 
 ![Img 1](assets/16.png)
+
+Catatan:
+
+Kenapa pada instalasi node exporter itu di semua server? karena semua server yang akan di monitoring itu membutuhkan node exporter untuk diambil informasi servernya,
+jika tidak ada node exporter maka tidak ada informasi yang bisa diambil oleh si prometheus, untuk prometheus dan grafana itu di install hanya di 1 server saja yang
+menjadi master nya.
 
 9. Cek ansible playbook kita apakah ada error dengan perintah berikut:
 
