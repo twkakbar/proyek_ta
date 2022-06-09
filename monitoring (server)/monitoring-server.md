@@ -186,6 +186,8 @@ Status server di prometheus
 
 ![Img 1](assets/22.png)
 
+Password default grafana adalah user: admin password: admin
+
 ![Img 1](assets/23.png)
 
 ![Img 1](assets/24.png)
