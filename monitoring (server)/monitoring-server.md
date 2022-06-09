@@ -95,7 +95,7 @@ Untuk ansible playbook yang saya gunakan adalah seperti berikut:
         upgrade: yes
 
     - name: "Install node exporter"
-      shell: "wget https://github.com/prometheus/node_exporter/releases/download/v0.15.2/node_exporter-0.15.2.linux-amd64.tar.gz; tar -xf node_exporter-0.15.2.linux-amd64.tar.gz; sudo mv node_exporter-0.15.2.linux-amd64/node_exporter /usr/local/bin; sudo useradd -rs /bin/false node_exporter"
+      shell: "wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz; tar -xf node_exporter-1.3.1.linux-amd64.tar.gz; sudo mv node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin; sudo useradd -rs /bin/false node_exporter"
       args:
         executable: /bin/bash
 
