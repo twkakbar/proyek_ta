@@ -212,10 +212,10 @@ Klik save & test
 
 untuk menggunakan tema klik import kemudian masukkan kode 10242
 
-![Img 1](assets/31.png)
+![Img 1](assets/31.jpg)
 
-![Img 1](assets/32.png)
+![Img 1](assets/32.jpg)
 
-![Img 1](assets/33.png)
+![Img 1](assets/33.jpg)
 
 ![Img 1](assets/30.png)
