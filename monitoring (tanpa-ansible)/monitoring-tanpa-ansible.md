@@ -429,11 +429,11 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
   allow_sign_up = false adalah misalkan ada orang yang dapat mengakses grafana kita tidak dapat melakukan registrasi.
 
   
-  ![Img 1](assets/32.png)
+  ![Img 1](assets/33.png)
 
 
  
-  ![Img 1](assets/33.png)
+  ![Img 1](assets/34.png)
   
 
 - Untuk melihat perubahan konfigurasi yang di lakukan pada `grafana` kita perlu merestart `grafana`.
@@ -443,7 +443,7 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
   ```
 
   
-  ![Img 1](assets/34.png)
+  ![Img 1](assets/35.png)
 
 
 - Sekarang kita cek kembali status dari `grafana` yang telah selesai kita konfigurasi
@@ -453,7 +453,7 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
   ```
 
   
-  ![Img 1](assets/35.png)
+  ![Img 1](assets/36.png)
 
 
 - Sekarang kita coba akses `grafana` kita, melalui port:3000 yang telah kita konfigurasi
@@ -461,13 +461,13 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
   http://(your server IP):3000
 
 
-  ![Img 1](assets/36.png)
+  ![Img 1](assets/37.png)
 
 
 - User dan pasword default dari grafana adalah User : `admin` Password : `admin`
 
   
-  ![Img 1](assets/37.png)
+  ![Img 1](assets/38.png)
   
 
 - Selanjutnya masukkan password untuk `grafana` kalian, default nya adalah user: admin password: admin
