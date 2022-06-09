@@ -331,3 +331,152 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ![Img 1](assets/25.png)
 
 
+# 3. Grafana
+
+**Grafana** adalah alat yang populer untuk membuat dashboard untuk berbagai sistem monitoring dan non monitor, termasuk `Graphite, InfluxDB, Elasticsearch, dan PostgreSQL`. Ini adalah salah satu tools yang dapat digunakan untuk membuat dashboard saat menggunakan **Prometheus**.
+
+## Grafana Installation
+
+Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih jelas saat membaca `prometheus` yang telah kita install sebelumnya.
+
+- Pertama-tama kita lakukan installasi grafana terlebih dahulu.
+
+  ```
+  sudo su
+  ```
+
+  ```
+  sudo wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
+  ```
+
+  ```
+  exit
+  ```
+
+  
+  ![Img 1](assets/26.png)
+  
+
+- Selanjutnya kita tambahakan repository dari `grafana`.
+
+  ```
+  sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+  ```
+
+
+  ![Img 1](assets/27.png)
+
+
+- Sekarang kita lakukan instalasi `grafana`.
+
+  ```
+  sudo apt install grafana -y
+  ```
+
+
+  ![Img 1](assets/28.png)
+  
+
+- Langkah berikut nya kita akan menghidupukan `grafana` yang telah kita setup.
+
+  ```
+  sudo systemctl enable grafana-server
+  ```
+
+
+  ![Img 1](assets/29.png)
+
+
+- Setelah kita mengaktifkan `grafana`, langkah berikut nya adalah kita akan menjalankan `grafana` yang telah kita hidupkan pada langkah sebelum nya, untuk menjalankan `grafana` silakan tuliskan perintah di bawah :
+
+  ```
+  sudo systemctl start grafana-server
+  ```
+
+
+  ![Img 1](assets/30.png)
+
+
+- Jika tahapan diatas telah kalian jalankan sekarang kita coba cek apakah `grafana` kita telah berjalan atau tidak.
+
+  ```
+  sudo systemctl status grafana-server
+  ```
+
+
+  ![Img 1](assets/31.png)
+
+
+- Selanjutnya edit konfigurasi pada `/etc/grafana/grafana.ini`
+
+  ```
+  sudo nano /etc/grafana/grafana.ini
+  ```
+
+- Ubah pada bagian `users` dan `auth.anonymous` seperti dibawah ini :
+
+  ```
+  [users]
+  # disable user signup / registration
+  allow_sign_up = false
+
+  [auth.anonymous]
+  # enable anonymous access
+  enabled = false
+  ```
+
+  **keterangan:**
+  allow_sign_up = false adalah misalkan ada orang yang dapat mengakses grafana kita tidak dapat melakukan registrasi.
+
+  
+  ![Img 1](assets/32.png)
+
+
+ 
+  ![Img 1](assets/33.png)
+  
+
+- Untuk melihat perubahan konfigurasi yang di lakukan pada `grafana` kita perlu merestart `grafana`.
+
+  ```
+  sudo systemctl restart grafana-server
+  ```
+
+  
+  ![Img 1](assets/34.png)
+
+
+- Sekarang kita cek kembali status dari `grafana` yang telah selesai kita konfigurasi
+
+  ```
+  sudo systemctl status grafana-server
+  ```
+
+  
+  ![Img 1](assets/35.png)
+
+
+- Sekarang kita coba akses `grafana` kita, melalui port:3000 yang telah kita konfigurasi
+
+  http://(your server IP):3000
+
+
+  ![Img 1](assets/36.png)
+
+
+- User dan pasword default dari grafana adalah User : `admin` Password : `admin`
+
+  
+  ![Img 1](assets/37.png)
+  
+
+- Selanjutnya masukkan password untuk `grafana` kalian, default nya adalah user: admin password: admin
+
+  <center>
+  ![Img 1](assets/38.png)
+  </center>
+
+- Berikut adalah tampilan dari `grafana`
+
+
+  ![Img 1](assets/39.png)
