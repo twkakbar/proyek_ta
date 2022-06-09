@@ -1,4 +1,4 @@
-# Setup Ansible and Monitoring
+# Setup Ansible dan Monitoring
 
 ## Langkah 1 - Ansible Installation (Dilakukan di local)
 
@@ -95,7 +95,7 @@ Untuk ansible playbook yang saya gunakan adalah seperti berikut:
         upgrade: yes
 
     - name: "Install node exporter"
-      shell: "wget https://github.com/prometheus/node_exporter/releases/download/v0.15.2/node_exporter-0.15.2.linux-amd64.tar.gz; tar -xf node_exporter-0.15.2.linux-amd64.tar.gz; sudo mv node_exporter-0.15.2.linux-amd64/node_exporter /usr/local/bin; sudo useradd -rs /bin/false node_exporter"
+      shell: "wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz; tar -xf node_exporter-1.3.1.linux-amd64.tar.gz; sudo mv node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin; sudo useradd -rs /bin/false node_exporter"
       args:
         executable: /bin/bash
 
@@ -113,7 +113,7 @@ Untuk ansible playbook yang saya gunakan adalah seperti berikut:
   become: true
   tasks:
     - name: "Install prometheus"
-      shell: "wget https://github.com/prometheus/prometheus/releases/download/v2.1.0/prometheus-2.1.0.linux-amd64.tar.gz; tar -xf prometheus-2.1.0.linux-amd64.tar.gz; sudo mv prometheus-2.1.0.linux-amd64/prometheus prometheus-2.1.0.linux-amd64/promtool /usr/local/bin; sudo mkdir /etc/prometheus /var/lib/prometheus; sudo mv prometheus-2.1.0.linux-amd64/consoles prometheus-2.1.0.linux-amd64/console_libraries /etc/prometheus"
+      shell: "wget https://github.com/prometheus/prometheus/releases/download/v2.36.0/prometheus-2.36.0.linux-amd64.tar.gz; sudo mv prometheus-2.36.0.linux-amd64/prometheus prometheus-2.36.0.linux-amd64/promtool /usr/local/bin; sudo mkdir /etc/prometheus /var/lib/prometheus; sudo mv prometheus-2.36.0.linux-amd64/consoles prometheus-2.36.0.linux-amd64/console_libraries /etc/prometheus"
       args:
         executable: /bin/bash
 
@@ -150,6 +150,12 @@ Untuk ansible playbook yang saya gunakan adalah seperti berikut:
 
 ![Img 1](assets/16.png)
 
+Catatan:
+
+Kenapa pada instalasi node exporter itu di semua server? karena semua server yang akan di monitoring itu membutuhkan node exporter untuk diambil informasi servernya,
+jika tidak ada node exporter maka tidak ada informasi yang bisa diambil oleh si prometheus, untuk prometheus dan grafana itu di install hanya di 1 server saja yang
+menjadi master nya.
+
 9. Cek ansible playbook kita apakah ada error dengan perintah berikut:
 
 ```
@@ -180,6 +186,8 @@ Status server di prometheus
 
 ![Img 1](assets/22.png)
 
+Password default grafana adalah user: admin password: admin
+
 ![Img 1](assets/23.png)
 
 ![Img 1](assets/24.png)
@@ -201,5 +209,13 @@ Klik save & test
 ![Img 1](assets/28.png)
 
 ![Img 1](assets/29.png)
+
+untuk menggunakan tema klik import kemudian masukkan kode 10242
+
+![Img 1](assets/31.png)
+
+![Img 1](assets/32.png)
+
+![Img 1](assets/33.png)
 
 ![Img 1](assets/30.png)
