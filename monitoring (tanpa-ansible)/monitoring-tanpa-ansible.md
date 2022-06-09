@@ -169,7 +169,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
  
-  ![Img 1](assets/13.png)
+  ![Img 1](assets/14.png)
 
 
 - Selanjutnya pindah kan isi dari directory `prometheus-2.36.0.linux-amd64` yaitu `prometheus` dan `promtool` ke dalam `/usr/local/bin`
@@ -179,7 +179,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
 
-  ![Img 1](assets/14.png)
+  ![Img 1](assets/15.png)
 
 
 - Setelah itu buat sebuah directory di dalam `/etc` dan `/var/lib` dengan nama prometheus.
@@ -189,7 +189,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
  
-  ![Img 1](assets/15.png)
+  ![Img 1](assets/16.png)
 
 
 - Selanjutnya pindahkan lagi isi dari directory `prometheus-2.36.0.linux-amd64` yaitu `consoles` dan `console_libraries` ke dalam `/etc/prometheus`
