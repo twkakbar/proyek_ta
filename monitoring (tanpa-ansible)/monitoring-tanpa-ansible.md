@@ -15,9 +15,9 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
 
 - Selanjutnya kita lakukan instalasi terlebih dahulu **node exporter**nya.
 
-  :::
+  
   Lakukan instalasi pada ketiga buah server yang telah kalian buat.
-  :::
+  
 
   ```
   wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
@@ -222,9 +222,9 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
        - targets: ['localhost:9100','prometheus-target-1:9100','prometheus-target-2:9100']
   ```
 
-  :::
+
   ubah pada bagian target, pastikan sesuai dengan IP dari server kalian
-  :::
+
 
 
   ![Img 1](assets/19.png)
@@ -276,7 +276,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
   
-  ![Img 1](assets/20.png)
+  ![Img 1](assets/22.png)
 
   **keterangan :**
 
@@ -291,7 +291,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
   
-  ![Img 1](assets/21.png)
+  ![Img 1](assets/23.png)
 
 
 - Sekarang kita tinggal menghidupukan `prometheus` kita.
@@ -301,7 +301,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
   
-  ![Img 1](assets/22.png)
+  ![Img 1](assets/24.png)
 
 
 - Karena kita pertama kali membuat `prometheus` ini, sekarang kita akan menjalankan service dari `prometheus`.
@@ -311,7 +311,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   ```
 
 
-  ![Img 1](assets/23.png)
+  ![Img 1](assets/25.png)
 
 
 - Jika tahapan diatas telah kalian jalankan sekarang kita coba cek apakah `prometheus` kita telah berjalan atau tidak.
