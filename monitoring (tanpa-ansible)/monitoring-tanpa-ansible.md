@@ -308,7 +308,7 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   sudo systemctl start prometheus
   ```
 
-  ![Img 1](assets/23.png)
+
 
 
 - Jika tahapan diatas telah kalian jalankan sekarang kita coba cek apakah `prometheus` kita telah berjalan atau tidak.
@@ -317,18 +317,17 @@ Sekarang kita akan melakukan instalasi prometheus pada salah satu server yang te
   sudo systemctl status prometheus
   ```
 
-
-  ![Img 1](assets/24.png)
+  ![Img 1](assets/23.png)
   
 
 - Sekarang kita coba akses `prometheus` kita pada web.browser. Prometheus berjalan di atas port:9090
 
   http://(your server IP):9090
 
-  ![Img 1](assets/25.png)
+  ![Img 1](assets/24.png)
 
 - Disini target saya down semua karena memang saya tadi tidak memasukkan ip target server nya, karena ini hanya instance tes saja
 
-  ![Img 1](assets/26.png)
+  ![Img 1](assets/25.png)
 
 
