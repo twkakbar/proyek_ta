@@ -20,7 +20,7 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
   :::
 
   ```
-  wget https://github.com/prometheus/node_exporter/releases/download/v0.15.2/node_exporter-0.15.2.linux-amd64.tar.gz
+  wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
   ```
 
 
@@ -30,7 +30,7 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
 - Selanjutnya extract `node exporter` yang telah kalian lakukan instalasi.
 
   ```
-  tar -xf node_exporter-0.15.2.linux-amd64.tar.gz
+  tar -xf node_exporter-1.3.1.linux-amd64.tar.gz
   ```
 
 
@@ -40,7 +40,7 @@ Sekarang kita akan melakukan instalasi **node exporter** untuk landasan monitori
 - Selanjutnya pindahkan isi dari `node exporter` yang telah kalian install ke dalam `/usr/local/bin`.
 
   ```
-  sudo mv node_exporter-0.15.2.linux-amd64/node_exporter /usr/local/bin
+  sudo mv node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin
   ```
 
 
