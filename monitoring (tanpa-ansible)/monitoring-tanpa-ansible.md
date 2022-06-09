@@ -467,7 +467,7 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
 - User dan pasword default dari grafana adalah User : `admin` Password : `admin`
 
   
-![Img 1](assets/36.png)
+  ![Img 1](assets/36.png)
 
 
 - Selanjutnya masukkan password untuk `grafana` yang kalian inginkan
@@ -479,4 +479,39 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
 - Berikut adalah tampilan dari `grafana`
 
 
+  ![Img 1](assets/42.png)
+
+
+- Tambahkan data source di grafana pilih setting -> data sources
+
+
+  ![Img 1](assets/43.jpg)
+
+- Pilih Prometheus
+
+
+  ![Img 1](assets/44.jpg)
+
+
+- Masukkan ip server yang di install prometheus tadi
+
+
+  ![Img 1](assets/45.jpg)
+
+- Klik save & test, jika berhasil maka grafana sudah terhubung ke prometheus
+
+
+  ![Img 1](assets/46.jpg)
+
+- Tambahkan tema, untuk menggunakan tema klik import kemudian masukkan kode 10242
+
+
+  ![Img 1](assets/37.jpg)
+
+  ![Img 1](assets/38.jpg)
+
   ![Img 1](assets/39.jpg)
+
+  ![Img 1](assets/47.jpg)
+
+
