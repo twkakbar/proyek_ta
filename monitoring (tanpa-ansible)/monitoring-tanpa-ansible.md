@@ -453,7 +453,7 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
   ```
 
   
-  ![Img 1](assets/36.png)
+  ![Img 1](assets/40.png)
 
 
 - Sekarang kita coba akses `grafana` kita, melalui port:3000 yang telah kita konfigurasi
@@ -461,22 +461,22 @@ Sekarang kita akan melakukan instalasi `grafana` untuk membantu kita agar lebih 
   http://(your server IP):3000
 
 
-  ![Img 1](assets/37.png)
+  ![Img 1](assets/36.png)
 
 
 - User dan pasword default dari grafana adalah User : `admin` Password : `admin`
 
   
-  ![Img 1](assets/38.png)
+  ![Img 1](assets/37.jpg)
   
 
 - Selanjutnya masukkan password untuk `grafana` kalian, default nya adalah user: admin password: admin
 
-  <center>
-  ![Img 1](assets/38.png)
-  </center>
+
+  ![Img 1](assets/38.jpg)
+
 
 - Berikut adalah tampilan dari `grafana`
 
 
-  ![Img 1](assets/39.png)
+  ![Img 1](assets/39.jpg)
