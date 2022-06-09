@@ -113,7 +113,7 @@ Untuk ansible playbook yang saya gunakan adalah seperti berikut:
   become: true
   tasks:
     - name: "Install prometheus"
-      shell: "wget https://github.com/prometheus/prometheus/releases/download/v2.1.0/prometheus-2.1.0.linux-amd64.tar.gz; tar -xf prometheus-2.1.0.linux-amd64.tar.gz; sudo mv prometheus-2.1.0.linux-amd64/prometheus prometheus-2.1.0.linux-amd64/promtool /usr/local/bin; sudo mkdir /etc/prometheus /var/lib/prometheus; sudo mv prometheus-2.1.0.linux-amd64/consoles prometheus-2.1.0.linux-amd64/console_libraries /etc/prometheus"
+      shell: "wget https://github.com/prometheus/prometheus/releases/download/v2.36.0/prometheus-2.36.0.linux-amd64.tar.gz; sudo mv prometheus-2.36.0.linux-amd64/prometheus prometheus-2.36.0.linux-amd64/promtool /usr/local/bin; sudo mkdir /etc/prometheus /var/lib/prometheus; sudo mv prometheus-2.36.0.linux-amd64/consoles prometheus-2.36.0.linux-amd64/console_libraries /etc/prometheus"
       args:
         executable: /bin/bash
 
