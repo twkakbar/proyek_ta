@@ -46,7 +46,7 @@ ansible --version
 ```
 ![Img 1](assets/2.png)
 
-## Langkah 1 - Setup Ansible (Dilakukan di local)
+## Langkah 2 - Setup Ansible (Dilakukan di local)
 1. Buat directory baru dan file baru bernama Inventory yang berisi isi dari server kita nantinya yang akan dilakukan otomisasi
 
 ![Img 1](assets/3.png)
